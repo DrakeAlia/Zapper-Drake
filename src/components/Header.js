@@ -31,29 +31,34 @@ const HeaderItem = styled.div`
 	flex: 1;
     color: white;
 `;
+
 const HeaderItemZapper = styled.div`
 	display: flex;
 	background-color: brown;
 	flex: 1;
 	color: white;
 `;
+
 const HeaderItemBigSpace = styled.div`
 	display: flex;
 	background-color: brown;
 	flex: 10;
 `;
+
 const HeaderItemDocs = styled.div`
 	display: flex;
 	background-color: brown;
 	flex: 1;
 	color: white;
 `;
+
 const HeaderItemTutorials = styled.div`
 	display: flex;
 	background-color: brown;
 	flex: 1;
 	color: white;
 `;
+
 const HeaderItemCommunity = styled.div`
 	display: flex;
 	background-color: brown;
@@ -62,14 +67,3 @@ const HeaderItemCommunity = styled.div`
 `;
 
 
-const Splash = styled.div`
-	display: flex;
-	background-color: blue;
-	flex: 10;
-`;
-
-const FeatureList = styled.div`
-	display: flex;
-	background-color: green;
-	flex: 10;
-`;
