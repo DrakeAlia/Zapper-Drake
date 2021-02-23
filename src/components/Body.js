@@ -37,6 +37,7 @@ const SplashContainer = styled.div`
 	display: flex;
 	flex: 1;
 	flex-direction: row;
+    padding: 10px;
 `;
 
 const SplashItemSearch = styled.div`
