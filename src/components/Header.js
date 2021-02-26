@@ -27,16 +27,20 @@ const HeaderBox = styled.div`
 
 const HeaderItem = styled.div`
 	display: flex;
-	background-color: brown;
 	flex: 1;
-    color: white;
+	color: inherit;
+	font-family: Avenir Next,Arial,sans-serif;
 `;
 
 const HeaderItemZapper = styled.div`
 	display: flex;
-	background-color: brown;
+	background: green;
 	flex: 1;
-	color: white;
+	color: #fff;
+	font-size: 20px;
+    font-weight: 600;
+    margin-top: 2px;
+	font-family: Avenir Next,Arial,sans-serif;
 `;
 
 const HeaderItemBigSpace = styled.div`
@@ -49,21 +53,26 @@ const HeaderItemDocs = styled.div`
 	display: flex;
 	background-color: brown;
 	flex: 1;
-	color: white;
+	color: #fff;
+	font-family: Avenir Next,Arial,sans-serif;
+
 `;
 
 const HeaderItemTutorials = styled.div`
 	display: flex;
 	background-color: brown;
 	flex: 1;
-	color: white;
+	color: #fff;
+	font-family: Avenir Next,Arial,sans-serif;
+
 `;
 
 const HeaderItemCommunity = styled.div`
 	display: flex;
 	background-color: brown;
 	flex: 1;
-	color: white;
+	color: #fff;
+	font-family: Avenir Next,Arial,sans-serif;
 `;
 
 
