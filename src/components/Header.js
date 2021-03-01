@@ -6,7 +6,7 @@ const Header = () => {
 		<HeaderBox>
 			<HeaderItem>Icon</HeaderItem>
 			<HeaderItemZapper>Zapper</HeaderItemZapper>
-			<HeaderItemBigSpace>BigSpace</HeaderItemBigSpace>
+			<HeaderItemBigSpace></HeaderItemBigSpace>
 			<HeaderItemDocs>Docs</HeaderItemDocs>
 			<HeaderItemTutorials>Tutorials</HeaderItemTutorials>
 			<HeaderItemCommunity>Community</HeaderItemCommunity>
@@ -19,59 +19,71 @@ export default Header;
 
 const HeaderBox = styled.div`
 	display: flex;
-	background-color: pink;
+	background: black;
 	flex: 1;
 	flex-direction: row;
-	padding-top: 10px;
+	height: 80px;
+	align-items: center;
+    position: relative;
 `;
 
 const HeaderItem = styled.div`
 	display: flex;
-	flex: 1;
-	color: inherit;
+	background: teal;
+	flex: -1;
+	color: #fff;
+	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
 const HeaderItemZapper = styled.div`
 	display: flex;
-	background: green;
+	/* background: blueviolet; */
 	flex: 1;
 	color: #fff;
 	font-size: 20px;
     font-weight: 600;
     margin-top: 2px;
+	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
 const HeaderItemBigSpace = styled.div`
 	display: flex;
-	background-color: brown;
-	flex: 10;
+	background:  #fff;;
+	flex: 45;
 `;
 
 const HeaderItemDocs = styled.div`
 	display: flex;
-	background-color: brown;
-	flex: 1;
+	/* background: blue; */
+	flex: -1;
 	color: #fff;
+	font-weight: 500;
+	margin: 0 16px;
 	font-family: Avenir Next,Arial,sans-serif;
 
 `;
 
 const HeaderItemTutorials = styled.div`
 	display: flex;
-	background-color: brown;
+	/* background: turquoise; */
 	flex: 1;
 	color: #fff;
+	font-weight: 500;
+	margin: 0 16px;
 	font-family: Avenir Next,Arial,sans-serif;
 
 `;
 
 const HeaderItemCommunity = styled.div`
 	display: flex;
-	background-color: brown;
+	/* background: tomato; */
 	flex: 1;
 	color: #fff;
+	font-weight: 500;
+	margin: 0 16px;
+	margin-inline-end: 30px;
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 

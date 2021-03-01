@@ -64,7 +64,7 @@ const SplashItemThird = styled.div`
 
 const SplashItemFourth = styled.div`
 	display: flex;
-	background-color: pink;
+	background-color: cyan;
 	flex: 1;
 	flex-direction: column;
 	color: #fff;
