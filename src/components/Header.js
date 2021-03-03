@@ -24,7 +24,6 @@ const HeaderBox = styled.div`
 	flex-direction: row;
 	height: 80px;
 	align-items: center;
-    position: relative;
 `;
 
 const HeaderItem = styled.div`

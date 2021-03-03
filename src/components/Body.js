@@ -19,91 +19,95 @@ const Body = () => {
 
 const Splash = styled.div`
 	display: flex;
-	background-color: blue;
-	flex: 10;
+	background: blue;
+	flex: 8;
 	flex-direction: column;
 	padding: 10px;
 `;
 
 const SplashItemFirst = styled.div`
 	display: flex;
-	background-color: black;
-	flex: 1;
-	flex-direction: column;
+	background: black;
+	flex: 0.5;
+	align-items: center;
 	color: #fff;
-	font-family: Avenir Next,Arial,sans-serif;
-	margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+	font-family: Avenir Next, Arial, sans-serif;
+	margin-top: 90px;
+	margin-bottom: 5px;
 	font-size: 36px;
-    font-weight: 600;
+	font-weight: 600;
 `;
 
 const SplashItemSecond = styled.div`
 	display: flex;
-	background-color: black;
-	flex: 1;
-	flex-direction: column;
+	background: black;
+	align-items: center;
 	color: #9cabbb;
-	font-family: Avenir Next,Arial,sans-serif;
-	margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+	font-family: Avenir Next, Arial, sans-serif;
+	margin-bottom: 20px;
+	font-size: 24px;
+`;
+
+const SplashContainer = styled.div`
+	display: flex;
+	flex: 0.5;
+	/* margin-top: 0px; */
+	margin-bottom: 20px;
+`;
+
+const SplashItemSearch = styled.div`
+	display: flex;
+	background: #21262b;
+	flex: 0.5;
+	align-items: center;
+	color: #fff;
+	border: 1px solid #2d3237;
+	font-family: Avenir Next;
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	height: 54px;
+`;
+
+const SplashItemGo = styled.div`
+	display: flex;
+	background: linear-gradient(135deg,#784ffe,#a160fe);
+	/* flex: 0.5; */
+	align-items: center;
+	color: #fff;
+	font-family: Avenir Next;
+	margin-top: 20px;
+	margin-bottom: 80px;
+`;
+
+const SplashItemConnect = styled.div`
+	display: flex;
+	background: #fff;
+	/* flex: 0.5; */
+	align-items: center;
+	color: #141a1e;
+	font-family: Avenir Next;
+	margin-top: 20px;
+	margin-bottom: 80px;
 `;
 
 const SplashItemThird = styled.div`
 	display: flex;
-	background-color: black;
-	flex: 1;
-	flex-direction: column;
+	background: black;
+	/* flex: 0.5; */
+	align-items: center;
 	color: #fff;
 	font-family: Avenir Next;
 `;
 
 const SplashItemFourth = styled.div`
 	display: flex;
-	background-color: cyan;
-	flex: 1;
-	flex-direction: column;
+	background: black;
+	/* flex: 0.5; */
+	align-items: center;
 	color: #fff;
 	font-family: Avenir Next;
 `;
 
-const SplashContainer = styled.div`
-	display: flex;
-	flex: 1;
-	flex-direction: row;
-    padding: 10px;
-`;
-
-const SplashItemSearch = styled.div`
-	display: flex;
-	background-color: black;
-	background: #21262b;
-	flex: 1;
-	flex-direction: row;
-	color: #fff;
-	font-family: Avenir Next;
-`;
-
-const SplashItemGo = styled.div`
-	display: flex;
-	background-color: pink;
-	flex: 1;
-	flex-direction: row;
-	color: #fff;
-	font-family: Avenir Next;
-`;
-
-const SplashItemConnect = styled.div`
-	display: flex;
-	background: #fff;
-	flex: 1;
-	flex-direction: row;
-	color: #141a1e;
-	font-family: Avenir Next;
-`;
 
 export default Body;
