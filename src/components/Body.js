@@ -17,6 +17,7 @@ const Body = () => {
 	);
 };
 
+// Body Container
 const Splash = styled.div`
 	display: flex;
 	background: blue;
@@ -25,19 +26,21 @@ const Splash = styled.div`
 	padding: 10px;
 `;
 
+// Manage your DeFi assets and liabilities in one simple interface.
 const SplashItemFirst = styled.div`
 	display: flex;
 	background: black;
-	flex: 0.5;
+	flex: 0.25;
 	align-items: center;
 	color: #fff;
 	font-family: Avenir Next, Arial, sans-serif;
-	margin-top: 90px;
+	margin-top: 150px;
 	margin-bottom: 5px;
 	font-size: 36px;
 	font-weight: 600;
 `;
 
+// Get unique access to opportunities in open finance.
 const SplashItemSecond = styled.div`
 	display: flex;
 	background: black;
@@ -48,6 +51,7 @@ const SplashItemSecond = styled.div`
 	font-size: 24px;
 `;
 
+// Mid-Body Container
 const SplashContainer = styled.div`
 	display: flex;
 	flex: 0.5;
@@ -55,6 +59,7 @@ const SplashContainer = styled.div`
 	margin-bottom: 20px;
 `;
 
+// Enter ENS domain, a valid ETH, or BTC address
 const SplashItemSearch = styled.div`
 	display: flex;
 	background: #21262b;
@@ -67,8 +72,10 @@ const SplashItemSearch = styled.div`
 	margin-top: 20px;
 	margin-bottom: 80px;
 	height: 54px;
+	cursor: pointer;
 `;
 
+// Let's Go!
 const SplashItemGo = styled.div`
 	display: flex;
 	background: linear-gradient(135deg,#784ffe,#a160fe);
@@ -78,8 +85,10 @@ const SplashItemGo = styled.div`
 	font-family: Avenir Next;
 	margin-top: 20px;
 	margin-bottom: 80px;
+	cursor: pointer;
 `;
 
+// Connect Wallet
 const SplashItemConnect = styled.div`
 	display: flex;
 	background: #fff;
@@ -89,24 +98,36 @@ const SplashItemConnect = styled.div`
 	font-family: Avenir Next;
 	margin-top: 20px;
 	margin-bottom: 80px;
+	cursor: pointer;
 `;
 
+// Don't have an address? View demo.
 const SplashItemThird = styled.div`
 	display: flex;
-	background: black;
+	background: transparent;
 	/* flex: 0.5; */
 	align-items: center;
 	color: #fff;
 	font-family: Avenir Next;
+	font-weight: 500;
+	margin-top: 32px;
+	font-size: 14px;
+	cursor: pointer;
 `;
 
+// What is DeFi?
 const SplashItemFourth = styled.div`
 	display: flex;
-	background: black;
+	background: transparent;
 	/* flex: 0.5; */
 	align-items: center;
 	color: #fff;
 	font-family: Avenir Next;
+	font-weight: 500;
+	margin-top: 32px;
+	font-size: 14px;
+	cursor: pointer;
+	
 `;
 
 

@@ -23,33 +23,41 @@ const Bottom = () => {
     );
 };
 
-
+// Bottom Container
 const FeatureList = styled.div`
 	display: flex;
-	background-color: green;
-	flex: 5;
+	background: green;
+	flex-direction: row;
+	flex: 6;
     justify-content: space-around;
     align-items: center;
 `;
 
 const FeatureListBox1 = styled.div`
 	display: flex;
-    flex-direction: column;
 	background: #21262b;
+    flex-direction: column;
+	border-radius: 4px;
+	padding: 32px 0;
 `;
 
 const FeatureListBox2 = styled.div`
 	display: flex;
-    flex-direction: column;
 	background: #21262b;
+    flex-direction: column;
+	border-radius: 4px;
+	padding: 32px 0;
 `;
 
 const FeatureListBox3 = styled.div`
 	display: flex;
-    flex-direction: column;
 	background: #21262b;
+    flex-direction: column;
+	border-radius: 4px;
+	padding: 32px 0;
 `;
 
+// Number
 const FeatureListItemNum = styled.div`
 	display: flex;
 	color: #fff;
@@ -58,12 +66,10 @@ const FeatureListItemNum = styled.div`
 	font-family: Avenir Next,Arial,sans-serif;
 	font-size: 30px;
     font-weight: 500;
-	margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+	margin-top: 20px;
 `;
 
+// Description
 const FeatureListItemTitle = styled.div`
 	display: flex;
 	color: #fff;
@@ -71,8 +77,10 @@ const FeatureListItemTitle = styled.div`
 	align-items: center;
 	font-family: Avenir Next,Arial,sans-serif;
 	font-size: 20px;
+	margin-top: 8px;
 `;
 
+// Date/View the full list
 const FeatureListItem = styled.div`
 	display: flex;
 	color: #9cabbb;
@@ -80,15 +88,16 @@ const FeatureListItem = styled.div`
 	align-items: center;
 	font-family: Avenir Next,Arial,sans-serif;
 	font-size: 16px;
-	margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 	padding: 10px;
 	text-decoration: ${props => props.isLink ? "underline" : "none" };
 `;
 
 export default Bottom;
+
+
+
+
+
 
 
 

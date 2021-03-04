@@ -16,7 +16,7 @@ const Header = () => {
 
 export default Header;
 
-
+// Header Container
 const HeaderBox = styled.div`
 	display: flex;
 	background: black;
@@ -26,6 +26,7 @@ const HeaderBox = styled.div`
 	align-items: center;
 `;
 
+// Icon
 const HeaderItem = styled.div`
 	display: flex;
 	background: teal;
@@ -35,6 +36,7 @@ const HeaderItem = styled.div`
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
+// Zapper
 const HeaderItemZapper = styled.div`
 	display: flex;
 	/* background: blueviolet; */
@@ -47,12 +49,14 @@ const HeaderItemZapper = styled.div`
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
+// BigSpace
 const HeaderItemBigSpace = styled.div`
 	display: flex;
 	background:  #fff;;
 	flex: 45;
 `;
 
+// Docs
 const HeaderItemDocs = styled.div`
 	display: flex;
 	/* background: blue; */
@@ -64,6 +68,7 @@ const HeaderItemDocs = styled.div`
 
 `;
 
+// Tutorials
 const HeaderItemTutorials = styled.div`
 	display: flex;
 	/* background: turquoise; */
@@ -75,6 +80,7 @@ const HeaderItemTutorials = styled.div`
 
 `;
 
+// Community
 const HeaderItemCommunity = styled.div`
 	display: flex;
 	/* background: tomato; */
