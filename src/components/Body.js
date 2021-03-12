@@ -9,6 +9,7 @@ const Body = () => {
 			<SplashContainer>
 				<SplashItemSearch>Enter ENS domain, a valid ETH, or BTC address</SplashItemSearch>
 				<SplashItemGo>Let's Go!</SplashItemGo>
+				<p>or</p>
 				<SplashItemConnect>Connect Wallet</SplashItemConnect>
 			</SplashContainer>
 			<SplashItemThird>Don't have an address? View demo.</SplashItemThird>
@@ -20,22 +21,27 @@ const Body = () => {
 // Body Container
 const Splash = styled.div`
 	display: flex;
-	background: blue;
-	flex: 8;
+	background: #141a1e;
+	color: #fff;
+	justify-content: center;
+	flex: 0 0 60%;
 	flex-direction: column;
-	padding: 10px;
+	padding: 0 16px;
+	width: 100%;
+	/* max-width: 1200px; */
+	margin: 0 auto;
+	border: 5px solid yellow; 
 `;
 
 // Manage your DeFi assets and liabilities in one simple interface.
 const SplashItemFirst = styled.div`
 	display: flex;
-	background: black;
-	flex: 0.25;
-	align-items: center;
+	background: #141a1e;;
 	color: #fff;
+	/* flex: 0.5; */
 	font-family: Avenir Next, Arial, sans-serif;
 	margin-top: 150px;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 	font-size: 36px;
 	font-weight: 600;
 `;
@@ -44,34 +50,41 @@ const SplashItemFirst = styled.div`
 const SplashItemSecond = styled.div`
 	display: flex;
 	background: black;
-	align-items: center;
 	color: #9cabbb;
 	font-family: Avenir Next, Arial, sans-serif;
-	margin-bottom: 20px;
+	margin-top: 12px;
+	margin-bottom: 32px;
 	font-size: 24px;
+	font-weight: 400;
 `;
 
 // Mid-Body Container
 const SplashContainer = styled.div`
 	display: flex;
-	flex: 0.5;
-	/* margin-top: 0px; */
-	margin-bottom: 20px;
+	flex: 0 0 10%;
+	flex-direction: row;
+	margin-top: 32px;
+	border: 5px dashed red; 
 `;
 
 // Enter ENS domain, a valid ETH, or BTC address
 const SplashItemSearch = styled.div`
 	display: flex;
 	background: #21262b;
-	flex: 0.5;
-	align-items: center;
 	color: #fff;
+	/* flex: 0.5; */
+	/* flex: 0 0 30%; */
+	align-items: center;
 	border: 1px solid #2d3237;
 	font-family: Avenir Next;
 	font-size: 16px;
-	margin-top: 20px;
-	margin-bottom: 80px;
+	width: 100%;
+    min-width: 500px;
+    max-width: 500px;
+    margin-right: 16px;
 	height: 54px;
+	padding: 12px 16px;
+	border-radius: 4px;
 	cursor: pointer;
 `;
 
@@ -79,12 +92,21 @@ const SplashItemSearch = styled.div`
 const SplashItemGo = styled.div`
 	display: flex;
 	background: linear-gradient(135deg,#784ffe,#a160fe);
+	color: #fff;
 	/* flex: 0.5; */
 	align-items: center;
-	color: #fff;
+	justify-content: center;
 	font-family: Avenir Next;
+	font-size: 16px;
+	font-weight: 500;
 	margin-top: 20px;
 	margin-bottom: 80px;
+	margin-right: 16px;
+	margin: 1px;
+	padding: 0 32px;
+	height: 54px;
+	/* margin-right: 55%; */
+	border-radius: 4px;
 	cursor: pointer;
 `;
 
@@ -92,12 +114,17 @@ const SplashItemGo = styled.div`
 const SplashItemConnect = styled.div`
 	display: flex;
 	background: #fff;
+	color: #141a1e;
 	/* flex: 0.5; */
 	align-items: center;
-	color: #141a1e;
+	justify-content: center;
 	font-family: Avenir Next;
-	margin-top: 20px;
-	margin-bottom: 80px;
+	font-size: 16px;
+	font-weight: 500;
+	margin-right: 16px;
+	padding: 0 32px;
+	height: 54px;
+	border-radius: 4px;
 	cursor: pointer;
 `;
 
@@ -105,13 +132,13 @@ const SplashItemConnect = styled.div`
 const SplashItemThird = styled.div`
 	display: flex;
 	background: transparent;
-	/* flex: 0.5; */
-	align-items: center;
 	color: #fff;
 	font-family: Avenir Next;
 	font-weight: 500;
-	margin-top: 32px;
 	font-size: 14px;
+	margin-top: 32px;
+	height: auto;
+	border-radius: 4px;
 	cursor: pointer;
 `;
 
@@ -119,15 +146,14 @@ const SplashItemThird = styled.div`
 const SplashItemFourth = styled.div`
 	display: flex;
 	background: transparent;
-	/* flex: 0.5; */
-	align-items: center;
 	color: #fff;
 	font-family: Avenir Next;
 	font-weight: 500;
-	margin-top: 32px;
 	font-size: 14px;
+	margin-top: 32px;
+	height: auto;
+	border-radius: 4px;
 	cursor: pointer;
-	
 `;
 
 

@@ -19,18 +19,18 @@ export default Header;
 // Header Container
 const HeaderBox = styled.div`
 	display: flex;
-	background: black;
+	background: #141a1e;;
 	flex: 1;
 	flex-direction: row;
 	height: 80px;
 	align-items: center;
+	border: 5px solid orange;
 `;
 
 // Icon
 const HeaderItem = styled.div`
 	display: flex;
-	background: teal;
-	flex: -1;
+	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -40,7 +40,6 @@ const HeaderItem = styled.div`
 const HeaderItemZapper = styled.div`
 	display: flex;
 	/* background: blueviolet; */
-	flex: 1;
 	color: #fff;
 	font-size: 20px;
     font-weight: 600;
@@ -54,13 +53,13 @@ const HeaderItemBigSpace = styled.div`
 	display: flex;
 	background:  #fff;;
 	flex: 45;
+	border: 5px solid purple;
 `;
 
 // Docs
 const HeaderItemDocs = styled.div`
 	display: flex;
 	/* background: blue; */
-	flex: -1;
 	color: #fff;
 	font-weight: 500;
 	margin: 0 16px;
@@ -72,7 +71,6 @@ const HeaderItemDocs = styled.div`
 const HeaderItemTutorials = styled.div`
 	display: flex;
 	/* background: turquoise; */
-	flex: 1;
 	color: #fff;
 	font-weight: 500;
 	margin: 0 16px;
@@ -84,7 +82,6 @@ const HeaderItemTutorials = styled.div`
 const HeaderItemCommunity = styled.div`
 	display: flex;
 	/* background: tomato; */
-	flex: 1;
 	color: #fff;
 	font-weight: 500;
 	margin: 0 16px;

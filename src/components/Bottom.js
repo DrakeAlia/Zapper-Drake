@@ -26,11 +26,12 @@ const Bottom = () => {
 // Bottom Container
 const FeatureList = styled.div`
 	display: flex;
-	background: green;
+	background: #141a1e;
 	flex-direction: row;
 	flex: 6;
     justify-content: space-around;
     align-items: center;
+	border: 5px solid blue;
 `;
 
 const FeatureListBox1 = styled.div`
@@ -39,6 +40,7 @@ const FeatureListBox1 = styled.div`
     flex-direction: column;
 	border-radius: 4px;
 	padding: 32px 0;
+	border: 5px solid green;
 `;
 
 const FeatureListBox2 = styled.div`
@@ -47,6 +49,7 @@ const FeatureListBox2 = styled.div`
     flex-direction: column;
 	border-radius: 4px;
 	padding: 32px 0;
+	border: 5px solid teal;
 `;
 
 const FeatureListBox3 = styled.div`
@@ -55,6 +58,7 @@ const FeatureListBox3 = styled.div`
     flex-direction: column;
 	border-radius: 4px;
 	padding: 32px 0;
+	border: 5px solid coral;
 `;
 
 // Number
