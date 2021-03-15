@@ -31,7 +31,6 @@ const FeatureList = styled.div`
 	flex: 6;
     justify-content: space-around;
     align-items: center;
-	border: 5px solid blue;
 `;
 
 const FeatureListBox1 = styled.div`

@@ -1,19 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import derek from '../media/derek.png'
 
 const Body = () => {
 	return (
 		<Splash>
-			<SplashItemFirst>Manage your DeFi assets and liabilities in one simple interface.</SplashItemFirst>
+			<SplashItemFirst>
+				Manage your <SplashColor> DeFi </SplashColor> assets and liabilities in one <br></br> simple interface.
+			</SplashItemFirst>
 			<SplashItemSecond>Get unique access to opportunities in open finance.</SplashItemSecond>
 			<SplashContainer>
 				<SplashItemSearch>Enter ENS domain, a valid ETH, or BTC address</SplashItemSearch>
 				<SplashItemGo>Let's Go!</SplashItemGo>
-				<p>or</p>
+				<br />or
 				<SplashItemConnect>Connect Wallet</SplashItemConnect>
 			</SplashContainer>
 			<SplashItemThird>Don't have an address? View demo.</SplashItemThird>
 			<SplashItemFourth>What is DeFi?</SplashItemFourth>
+			<SplashImg1 src={derek}></SplashImg1>
 		</Splash>
 	);
 };
@@ -30,26 +34,39 @@ const Splash = styled.div`
 	width: 100%;
 	/* max-width: 1200px; */
 	margin: 0 auto;
-	border: 5px solid yellow; 
+	/* border: 5px solid yellow; */
+	line-height: normal;
+`;
+
+const SplashImg1 = styled.img`
+	width:10px;
+`;
+
+const SplashColor = styled.span`
+	color: #784ffe;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: contents;
 `;
 
 // Manage your DeFi assets and liabilities in one simple interface.
 const SplashItemFirst = styled.div`
 	display: flex;
-	background: #141a1e;;
+	background: #141a1e;
 	color: #fff;
-	/* flex: 0.5; */
+	/* flex: 0 0 10%; */
 	font-family: Avenir Next, Arial, sans-serif;
 	margin-top: 150px;
 	margin-bottom: 8px;
 	font-size: 36px;
 	font-weight: 600;
+	/* width: 70%; */
 `;
 
 // Get unique access to opportunities in open finance.
 const SplashItemSecond = styled.div`
 	display: flex;
-	background: black;
+	background: #141a1e;
 	color: #9cabbb;
 	font-family: Avenir Next, Arial, sans-serif;
 	margin-top: 12px;
@@ -64,7 +81,7 @@ const SplashContainer = styled.div`
 	flex: 0 0 10%;
 	flex-direction: row;
 	margin-top: 32px;
-	border: 5px dashed red; 
+	/* border: 5px dashed red; */
 `;
 
 // Enter ENS domain, a valid ETH, or BTC address
@@ -79,9 +96,9 @@ const SplashItemSearch = styled.div`
 	font-family: Avenir Next;
 	font-size: 16px;
 	width: 100%;
-    min-width: 500px;
-    max-width: 500px;
-    margin-right: 16px;
+	min-width: 500px;
+	max-width: 500px;
+	margin-right: 16px;
 	height: 54px;
 	padding: 12px 16px;
 	border-radius: 4px;
@@ -91,7 +108,8 @@ const SplashItemSearch = styled.div`
 // Let's Go!
 const SplashItemGo = styled.div`
 	display: flex;
-	background: linear-gradient(135deg,#784ffe,#a160fe);
+	// background: linear-gradient(135deg, #784ffe, #a160fe);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,67,9,1) 35%, rgba(0,212,255,1) 100%); 
 	color: #fff;
 	/* flex: 0.5; */
 	align-items: center;
@@ -155,6 +173,5 @@ const SplashItemFourth = styled.div`
 	border-radius: 4px;
 	cursor: pointer;
 `;
-
 
 export default Body;

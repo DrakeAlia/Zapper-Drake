@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from './Header';
 import Body from './Body';
 import Bottom from './Bottom';
+import Footer from './Footer';
 
 const App = () => {
 	return (
@@ -10,6 +11,7 @@ const App = () => {
 			<Header />
 			<Body />
             <Bottom />
+			<Footer />
 		</Box>
 	);
 };

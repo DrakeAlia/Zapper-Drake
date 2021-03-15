@@ -24,7 +24,6 @@ const HeaderBox = styled.div`
 	flex-direction: row;
 	height: 80px;
 	align-items: center;
-	border: 5px solid orange;
 `;
 
 // Icon
@@ -53,7 +52,7 @@ const HeaderItemBigSpace = styled.div`
 	display: flex;
 	background:  #fff;;
 	flex: 45;
-	border: 5px solid purple;
+	/* border: 5px solid purple; */
 `;
 
 // Docs
