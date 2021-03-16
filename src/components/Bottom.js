@@ -28,36 +28,47 @@ const FeatureList = styled.div`
 	display: flex;
 	background: #141a1e;
 	flex-direction: row;
-	flex: 6;
+	/* flex: 6; */
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+	-webkit-font-smoothing: antialiased;
+	padding: 40px 0;
 `;
 
+// Container 1
 const FeatureListBox1 = styled.div`
 	display: flex;
 	background: #21262b;
     flex-direction: column;
+	/* flex: 1; */
+	/* align-items: center; */
 	border-radius: 4px;
 	padding: 32px 0;
-	border: 5px solid green;
+	/* border: 5px solid green; */
 `;
 
+// Container 2
 const FeatureListBox2 = styled.div`
 	display: flex;
 	background: #21262b;
     flex-direction: column;
+	/* flex: 1; */
+	/* align-items: center; */
 	border-radius: 4px;
 	padding: 32px 0;
-	border: 5px solid teal;
+	/* border: 5px solid teal; */
 `;
 
+// Container 3
 const FeatureListBox3 = styled.div`
 	display: flex;
 	background: #21262b;
     flex-direction: column;
+	/* flex: 1; */
+	/* align-items: center; */
 	border-radius: 4px;
 	padding: 32px 0;
-	border: 5px solid coral;
+	/* border: 5px solid coral; */
 `;
 
 // Number
@@ -68,8 +79,10 @@ const FeatureListItemNum = styled.div`
 	align-items: center;
 	font-family: Avenir Next,Arial,sans-serif;
 	font-size: 30px;
-    font-weight: 500;
-	margin-top: 20px;
+    font-weight: 600;
+	/* margin-top: 20px; */
+	margin-top: 0;
+	margin-bottom: 0;
 `;
 
 // Description
@@ -80,7 +93,10 @@ const FeatureListItemTitle = styled.div`
 	align-items: center;
 	font-family: Avenir Next,Arial,sans-serif;
 	font-size: 20px;
-	margin-top: 8px;
+	font-weight: 500;
+	/* margin-top: 8px; */
+	margin-top: 0;
+	margin-bottom: 0;
 `;
 
 // Date/View the full list
@@ -92,6 +108,7 @@ const FeatureListItem = styled.div`
 	font-family: Avenir Next,Arial,sans-serif;
 	font-size: 16px;
 	padding: 10px;
+	margin-bottom: 0;
 	text-decoration: ${props => props.isLink ? "underline" : "none" };
 `;
 

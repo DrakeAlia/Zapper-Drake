@@ -19,17 +19,18 @@ export default Header;
 // Header Container
 const HeaderBox = styled.div`
 	display: flex;
-	background: #141a1e;;
+	background: #141a1e;
 	flex: 1;
 	flex-direction: row;
 	height: 80px;
 	align-items: center;
+	-webkit-font-smoothing: antialiased;
 `;
 
 // Icon
 const HeaderItem = styled.div`
 	display: flex;
-	background: #141a1e;;
+	background: #141a1e;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -41,7 +42,7 @@ const HeaderItemZapper = styled.div`
 	/* background: blueviolet; */
 	color: #fff;
 	font-size: 20px;
-    font-weight: 600;
+    font-weight: 650;
     margin-top: 2px;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -50,7 +51,7 @@ const HeaderItemZapper = styled.div`
 // BigSpace
 const HeaderItemBigSpace = styled.div`
 	display: flex;
-	background:  #fff;;
+	background:  #fff;
 	flex: 45;
 	/* border: 5px solid purple; */
 `;
@@ -60,7 +61,7 @@ const HeaderItemDocs = styled.div`
 	display: flex;
 	/* background: blue; */
 	color: #fff;
-	font-weight: 500;
+	font-weight: 650;
 	margin: 0 16px;
 	font-family: Avenir Next,Arial,sans-serif;
 
@@ -71,7 +72,7 @@ const HeaderItemTutorials = styled.div`
 	display: flex;
 	/* background: turquoise; */
 	color: #fff;
-	font-weight: 500;
+	font-weight: 650;
 	margin: 0 16px;
 	font-family: Avenir Next,Arial,sans-serif;
 
@@ -82,7 +83,7 @@ const HeaderItemCommunity = styled.div`
 	display: flex;
 	/* background: tomato; */
 	color: #fff;
-	font-weight: 500;
+	font-weight: 650;
 	margin: 0 16px;
 	margin-inline-end: 30px;
 	font-family: Avenir Next,Arial,sans-serif;

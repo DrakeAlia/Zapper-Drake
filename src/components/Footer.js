@@ -23,18 +23,18 @@ const Footer = () => {
 // Footer Container
 const FooterContainer = styled.div`
 	display: flex;
-	background: #141a1e;;
+	background: #141a1e;
 	flex: 1;
 	flex-direction: row;
 	height: 80px;
 	align-items: center;
     padding: 1%;
+    -webkit-font-smoothing: antialiased;
 `;
 
 // Twitter Icon
 const FooterTwitter = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -44,7 +44,6 @@ const FooterTwitter = styled.div`
 // Discord Icon
 const FooterDiscord = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -53,7 +52,6 @@ const FooterDiscord = styled.div`
 // Zapper Icon
 const FooterZapper = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -62,7 +60,6 @@ const FooterZapper = styled.div`
 // FAQ
 const FooterFaq = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -71,7 +68,6 @@ const FooterFaq = styled.div`
 // Docs
 const FooterDocs = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -80,7 +76,6 @@ const FooterDocs = styled.div`
 // Contact
 const FooterContact = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -89,7 +84,6 @@ const FooterContact = styled.div`
 // Platforms
 const FooterPlatform = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -98,7 +92,6 @@ const FooterPlatform = styled.div`
 // Policy
 const FooterPolicy = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -107,7 +100,6 @@ const FooterPolicy = styled.div`
 // Cookie
 const FooterCookie = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
@@ -116,16 +108,14 @@ const FooterCookie = styled.div`
 // Language
 const FooterLanguage = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
-	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
 // BigSpace
 const FooterSpace = styled.div`
 	display: flex;
-	background:  #fff;;
+	background:  #fff;
 	flex: 45;
 	/* border: 5px solid purple; */
 `;
@@ -133,9 +123,7 @@ const FooterSpace = styled.div`
 // Copyright
 const FooterCopyright = styled.div`
 	display: flex;
-	background: #141a1e;;
 	color: #fff;
-	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
