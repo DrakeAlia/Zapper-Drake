@@ -28,7 +28,7 @@ const FeatureList = styled.div`
 	display: flex;
 	background: #141a1e;
 	flex-direction: row;
-	/* flex: 6; */
+	/* flex: 1; */
     justify-content: space-around;
     /* align-items: center; */
 	-webkit-font-smoothing: antialiased;
@@ -44,6 +44,8 @@ const FeatureListBox1 = styled.div`
 	/* align-items: center; */
 	border-radius: 4px;
 	padding: 32px 0;
+	padding-left: 50px;
+    padding-right: 50px;
 	/* border: 5px solid green; */
 `;
 
@@ -56,6 +58,8 @@ const FeatureListBox2 = styled.div`
 	/* align-items: center; */
 	border-radius: 4px;
 	padding: 32px 0;
+	padding-left: 50px;
+    padding-right: 50px;
 	/* border: 5px solid teal; */
 `;
 
@@ -68,6 +72,8 @@ const FeatureListBox3 = styled.div`
 	/* align-items: center; */
 	border-radius: 4px;
 	padding: 32px 0;
+	padding-left: 50px;
+    padding-right: 50px;
 	/* border: 5px solid coral; */
 `;
 
@@ -82,7 +88,7 @@ const FeatureListItemNum = styled.div`
     font-weight: 600;
 	/* margin-top: 20px; */
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 21px;
 `;
 
 // Description
@@ -108,8 +114,10 @@ const FeatureListItem = styled.div`
 	font-family: Avenir Next,Arial,sans-serif;
 	font-size: 16px;
 	padding: 10px;
+	margin-top: 10px;
 	margin-bottom: 0;
 	text-decoration: ${props => props.isLink ? "underline" : "none" };
+	cursor: pointer;
 `;
 
 export default Bottom;

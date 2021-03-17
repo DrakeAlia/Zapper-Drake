@@ -23,6 +23,7 @@ const HeaderBox = styled.div`
 	flex: 1;
 	flex-direction: row;
 	height: 80px;
+	line-height: 80px;
 	align-items: center;
 	-webkit-font-smoothing: antialiased;
 `;
@@ -36,6 +37,8 @@ const HeaderItem = styled.div`
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
+{/* <path id="logo_exterior" d="M500 250C500 111.929 388.071 0 250 0C111.929 0 0 111.929 0 250C0 388.071 111.929 500 250 500C388.071 500 500 388.071 500 250Z" fill="#784FFE"></path> */}
+
 // Zapper
 const HeaderItemZapper = styled.div`
 	display: flex;
@@ -46,6 +49,7 @@ const HeaderItemZapper = styled.div`
     margin-top: 2px;
 	margin-inline-start: 10px;
 	font-family: Avenir Next,Arial,sans-serif;
+	cursor: pointer;
 `;
 
 // BigSpace
@@ -64,7 +68,7 @@ const HeaderItemDocs = styled.div`
 	font-weight: 650;
 	margin: 0 16px;
 	font-family: Avenir Next,Arial,sans-serif;
-
+	cursor: pointer;
 `;
 
 // Tutorials
@@ -75,7 +79,7 @@ const HeaderItemTutorials = styled.div`
 	font-weight: 650;
 	margin: 0 16px;
 	font-family: Avenir Next,Arial,sans-serif;
-
+	cursor: pointer;
 `;
 
 // Community
@@ -87,6 +91,7 @@ const HeaderItemCommunity = styled.div`
 	margin: 0 16px;
 	margin-inline-end: 30px;
 	font-family: Avenir Next,Arial,sans-serif;
+	cursor: pointer;
 `;
 
 

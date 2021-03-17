@@ -28,7 +28,8 @@ const Splash = styled.div`
 	background: #141a1e;
 	color: #fff;
 	justify-content: center;
-	flex: 0 0 60%;
+	flex: 0 1 70%;
+	/* flex: 1; */
 	flex-direction: column;
 	padding: 0 16px;
 	width: 100%;
@@ -49,13 +50,16 @@ const SplashColor = styled.span`
 	padding-right: 10px;
 	padding-left: 10px;
 	display: contents;
+	font-size: 49px;
+    font-weight: 650;
 `;
 
 // or
 const SplashOr = styled.span`
 	margin-right: 16px;
 	padding-left: 10px;
-	line-height: 50px;
+	line-height: 58px;
+	font-weight: 600;
 	font-family: Avenir Next,Arial,sans-serif;
 	color: #fff;
 `;
@@ -68,7 +72,7 @@ const SplashItemFirst = styled.div`
 	font-family: Avenir Next, Arial, sans-serif;
 	margin-top: 150px;
 	margin-bottom: 8px;
-	font-size: 36px;
+	font-size: 39px;
 	font-weight: 650;
 `;
 
@@ -80,7 +84,7 @@ const SplashItemSecond = styled.div`
 	font-family: Avenir Next, Arial, sans-serif;
 	margin-top: 5px;
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 600;
 `;
 
 // Mid-Body Container
@@ -108,7 +112,7 @@ const SplashItemSearch = styled.div`
 	height: 54px;
 	padding: 12px 16px;
 	border-radius: 4px;
-	cursor: pointer;
+	cursor: text;
 `;
 
 // Let's Go!
@@ -120,7 +124,7 @@ const SplashItemGo = styled.div`
 	justify-content: center;
 	font-family: Avenir Next;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	margin-top: 20px;
 	margin-bottom: 80px;
 	margin-right: 16px;
@@ -141,7 +145,7 @@ const SplashItemConnect = styled.div`
 	justify-content: center;
 	font-family: Avenir Next;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	margin-right: 16px;
 	padding: 0 32px;
 	height: 54px;

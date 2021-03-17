@@ -7,13 +7,13 @@ const Footer = () => {
             <FooterTwitter></FooterTwitter>
             <FooterDiscord></FooterDiscord>
             <FooterZapper></FooterZapper>
-            <FooterFaq>FAQ</FooterFaq>
-            <FooterDocs>Docs</FooterDocs>
-            <FooterContact>Contact Support</FooterContact>
-            <FooterPlatform>Supported Platforms</FooterPlatform>
-            <FooterPolicy>Privacy Policy</FooterPolicy>
-            <FooterCookie>Cookie Notice</FooterCookie>
-            <FooterLanguage></FooterLanguage>
+            <FooterFaq isLink>FAQ</FooterFaq>
+            <FooterDocs isLink>Docs</FooterDocs>
+            <FooterContact isLink>Contact Support</FooterContact>
+            <FooterPlatform isLink>Supported Platforms</FooterPlatform>
+            <FooterPolicy isLink>Privacy Policy</FooterPolicy>
+            <FooterCookie isLink>Cookie Notice</FooterCookie>
+            {/* <FooterLanguage></FooterLanguage> */}
             <FooterSpace></FooterSpace>
             <FooterCopyright>© Zapper 2021</FooterCopyright>
         </FooterContainer>
@@ -26,91 +26,102 @@ const FooterContainer = styled.div`
 	background: #141a1e;
 	flex: 1;
 	flex-direction: row;
-	height: 80px;
 	align-items: center;
-    padding: 1%;
+    padding: 22px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
     -webkit-font-smoothing: antialiased;
 `;
 
 // Twitter Icon
-const FooterTwitter = styled.div`
-	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
-	font-family: Avenir Next,Arial,sans-serif;
-`;
-/* href="https://twitter.com/zapper_f" */
+const FooterTwitter = styled.img`
+	/* width: 10px; */
+`; 
 
 // Discord Icon
-const FooterDiscord = styled.div`
-	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
-	font-family: Avenir Next,Arial,sans-serif;
-`;
+const FooterDiscord = styled.img`
+	/* width: 10px; */
+`; 
 
-// Zapper Icon
-const FooterZapper = styled.div`
-	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
-	font-family: Avenir Next,Arial,sans-serif;
-`;
+// Zapper Barcode Icon
+const FooterZapper = styled.img`
+	/* width: 10px; */
+`; 
 
 // FAQ
 const FooterFaq = styled.div`
 	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
+	color: #9cabbb;
+	font-size: 14px;
+    margin-right: 12px;
 	font-family: Avenir Next,Arial,sans-serif;
+    text-decoration: ${props => props.isLink ? "underline" : "none" };
+    cursor: pointer;
 `;
 
 // Docs
 const FooterDocs = styled.div`
 	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
+	color: #9cabbb;
+	font-size: 14px;
+    margin-right: 12px;
 	font-family: Avenir Next,Arial,sans-serif;
+    text-decoration: ${props => props.isLink ? "underline" : "none" };
+    cursor: pointer;
 `;
 
 // Contact
 const FooterContact = styled.div`
 	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
+	color: #9cabbb;
+	font-size: 14px;
+    margin-right: 12px;
 	font-family: Avenir Next,Arial,sans-serif;
+    text-decoration: ${props => props.isLink ? "underline" : "none" };
+    cursor: pointer;
 `;
 
 // Platforms
 const FooterPlatform = styled.div`
 	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
+	color: #9cabbb;
+	font-size: 14px;
+    margin-right: 12px;
 	font-family: Avenir Next,Arial,sans-serif;
+    text-decoration: ${props => props.isLink ? "underline" : "none" };
+    cursor: pointer;
 `;
 
 // Policy
 const FooterPolicy = styled.div`
 	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
+	color: #9cabbb;
+	font-size: 14px;
+    margin-right: 12px;
 	font-family: Avenir Next,Arial,sans-serif;
+    text-decoration: ${props => props.isLink ? "underline" : "none" };
+    cursor: pointer;
 `;
 
 // Cookie
 const FooterCookie = styled.div`
 	display: flex;
-	color: #fff;
-	margin-inline-start: 10px;
+	color: #9cabbb;
+	font-size: 14px;
+    margin-right: 12px;
 	font-family: Avenir Next,Arial,sans-serif;
+    text-decoration: ${props => props.isLink ? "underline" : "none" };
+    cursor: pointer;
 `;
 
 // Language
-const FooterLanguage = styled.div`
-	display: flex;
-	color: #fff;
-	font-family: Avenir Next,Arial,sans-serif;
-`;
+// const FooterLanguage = styled.div`
+// 	display: flex;
+// 	color: #fff;
+// 	font-family: Avenir Next,Arial,sans-serif;
+// `;
 
 // BigSpace
 const FooterSpace = styled.div`
@@ -123,7 +134,7 @@ const FooterSpace = styled.div`
 // Copyright
 const FooterCopyright = styled.div`
 	display: flex;
-	color: #fff;
+	color: #9cabbb;
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
