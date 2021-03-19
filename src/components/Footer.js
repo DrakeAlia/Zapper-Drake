@@ -1,12 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import twitter from '../media/download2.png';
+import discord from '../media/download.png';
+import message from '../media/download3.png';
 
 const Footer = () => {
     return (
         <FooterContainer>
-            <FooterTwitter></FooterTwitter>
-            <FooterDiscord></FooterDiscord>
-            <FooterZapper></FooterZapper>
+            <FooterImg1 src={twitter}></FooterImg1>
+            <FooterImg2 src={discord}></FooterImg2>
+            <FooterImg3 src={message}></FooterImg3>
             <FooterFaq isLink>FAQ</FooterFaq>
             <FooterDocs isLink>Docs</FooterDocs>
             <FooterContact isLink>Contact Support</FooterContact>
@@ -36,18 +39,19 @@ const FooterContainer = styled.div`
 `;
 
 // Twitter Icon
-const FooterTwitter = styled.img`
-	/* width: 10px; */
+const FooterImg1 = styled.img`
+	width: 30px;
 `; 
 
 // Discord Icon
-const FooterDiscord = styled.img`
-	/* width: 10px; */
+const FooterImg2 = styled.img`
+	width: 30px;
 `; 
 
+
 // Zapper Barcode Icon
-const FooterZapper = styled.img`
-	/* width: 10px; */
+const FooterImg3 = styled.img`
+	width: 30px;
 `; 
 
 // FAQ

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import derek from '../media/derek.png'
+// import derek from '../media/derek.png'
 
 const Body = () => {
 	return (
@@ -134,6 +134,9 @@ const SplashItemGo = styled.div`
 	/* margin-right: 55%; */
 	border-radius: 4px;
 	cursor: pointer;
+	/* .btn:hover {
+    transform: translateY(-40px);
+  } */
 `;
 
 // Connect Wallet
