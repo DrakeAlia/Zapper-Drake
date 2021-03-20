@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import banner from '../media/download4.png';
 
 const Header = () => {
 	return (
 		<HeaderBox>
-			<HeaderItem>Icon</HeaderItem>
+			<HeaderImg src={banner}></HeaderImg>
 			<HeaderItemZapper>Zapper</HeaderItemZapper>
 			<HeaderItemBigSpace></HeaderItemBigSpace>
 			<HeaderItemDocs>Docs</HeaderItemDocs>
@@ -28,13 +29,13 @@ const HeaderBox = styled.div`
 	-webkit-font-smoothing: antialiased;
 `;
 
-// Icon
-const HeaderItem = styled.div`
+// Zapper Icon
+const HeaderImg = styled.img`
 	display: flex;
 	background: #141a1e;
 	color: #fff;
 	margin-inline-start: 10px;
-	font-family: Avenir Next,Arial,sans-serif;
+	width: 50px;
 `;
 
 {/* <path id="logo_exterior" d="M500 250C500 111.929 388.071 0 250 0C111.929 0 0 111.929 0 250C0 388.071 111.929 500 250 500C388.071 500 500 388.071 500 250Z" fill="#784FFE"></path> */}

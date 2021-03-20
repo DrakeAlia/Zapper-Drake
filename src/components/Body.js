@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import derek from '../media/derek.png'
+
 
 const Body = () => {
 	return (
@@ -15,9 +15,8 @@ const Body = () => {
 				<br /><SplashOr>or</SplashOr>
 				<SplashItemConnect>Connect Wallet</SplashItemConnect>
 			</SplashContainer>
-			<SplashItemThird>Don't have an address? View demo.</SplashItemThird>
-			<SplashItemFourth>What is DeFi?</SplashItemFourth>
-			{/* <SplashImg1 src={derek}></SplashImg1> */}
+			<SplashItemThird>→ Don't have an address? View demo.</SplashItemThird>
+			<SplashItemFourth>→ What is DeFi?</SplashItemFourth>
 		</Splash>
 	);
 };
@@ -39,10 +38,6 @@ const Splash = styled.div`
 	line-height: normal;
 `;
 
-// img test
-// const SplashImg1 = styled.img`
-// 	/* width: 10px; */
-// `;
 
 // DeFi
 const SplashColor = styled.span`

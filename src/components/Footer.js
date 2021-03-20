@@ -30,7 +30,7 @@ const FooterContainer = styled.div`
 	flex: 1;
 	flex-direction: row;
 	align-items: center;
-    padding: 22px;
+    padding: 42px 0;
     width: 100%;
     box-sizing: border-box;
     max-width: 1200px;
@@ -40,18 +40,27 @@ const FooterContainer = styled.div`
 
 // Twitter Icon
 const FooterImg1 = styled.img`
-	width: 30px;
+    display: flex;
+    width: 25px;
+    margin-right: 8px;
+    margin-left: 15px;
+    cursor: pointer;
 `; 
 
 // Discord Icon
 const FooterImg2 = styled.img`
-	width: 30px;
+    display: flex;
+    width: 25px;
+    margin-right: 8px;
+    cursor: pointer;
 `; 
 
-
-// Zapper Barcode Icon
+// Message Icon
 const FooterImg3 = styled.img`
-	width: 30px;
+    display: flex;
+    width: 25px;
+    margin-right: 8px;
+    cursor: pointer;
 `; 
 
 // FAQ
@@ -60,6 +69,7 @@ const FooterFaq = styled.div`
 	color: #9cabbb;
 	font-size: 14px;
     margin-right: 12px;
+    margin-left: 8px;
 	font-family: Avenir Next,Arial,sans-serif;
     text-decoration: ${props => props.isLink ? "underline" : "none" };
     cursor: pointer;
@@ -139,6 +149,7 @@ const FooterSpace = styled.div`
 const FooterCopyright = styled.div`
 	display: flex;
 	color: #9cabbb;
+    margin-right: 15px;
 	font-family: Avenir Next,Arial,sans-serif;
 `;
 
