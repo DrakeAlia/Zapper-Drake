@@ -33,7 +33,7 @@ const FooterContainer = styled.div`
     padding: 42px 0;
     width: 100%;
     box-sizing: border-box;
-    max-width: 1200px;
+    max-width: 1940px;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
 `;
