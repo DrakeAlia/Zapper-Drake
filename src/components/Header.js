@@ -15,7 +15,6 @@ const Header = () => {
 	);
 };
 
-export default Header;
 
 // Header Container 
 const HeaderBox = styled.div`
@@ -96,3 +95,4 @@ const HeaderItemCommunity = styled.div`
 `;
 
 
+export default Header;

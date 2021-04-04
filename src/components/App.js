@@ -1,4 +1,6 @@
-import React from 'react';
+import { useState } from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from './Header';
 import Body from './Body';
