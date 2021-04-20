@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
+// Middle container for Landing Page
 const Body = () => {
 	return (
 		<Splash>

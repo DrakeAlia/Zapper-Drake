@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import banner from '../media/download4.png';
 
+// The Header of the Landing Page
 const Header = () => {
 	return (
 		<HeaderBox>
@@ -52,7 +53,7 @@ const HeaderItemZapper = styled.div`
 	cursor: pointer;
 `;
 
-// BigSpace
+// BigSpace in between 
 const HeaderItemBigSpace = styled.div`
 	display: flex;
 	background:  #fff;
@@ -60,7 +61,7 @@ const HeaderItemBigSpace = styled.div`
 	/* border: 5px solid purple; */
 `;
 
-// Docs
+// Docs Tab
 const HeaderItemDocs = styled.div`
 	display: flex;
 	/* background: blue; */
@@ -71,7 +72,7 @@ const HeaderItemDocs = styled.div`
 	cursor: pointer;
 `;
 
-// Tutorials
+// Tutorials Tab
 const HeaderItemTutorials = styled.div`
 	display: flex;
 	/* background: turquoise; */
@@ -82,7 +83,7 @@ const HeaderItemTutorials = styled.div`
 	cursor: pointer;
 `;
 
-// Community
+// Community Tab
 const HeaderItemCommunity = styled.div`
 	display: flex;
 	/* background: tomato; */

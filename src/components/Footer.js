@@ -4,6 +4,7 @@ import twitter from '../media/download2.png';
 import discord from '../media/download.png';
 import message from '../media/download3.png';
 
+// Footer of the Landing Page 
 const Footer = () => {
     return (
         <FooterContainer>
