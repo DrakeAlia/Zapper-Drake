@@ -3,13 +3,19 @@ import styled from "styled-components";
 import twitter from "../media/download2.png";
 import discord from "../media/download.png";
 import message from "../media/download3.png";
+import banner from '../media/download4.png';
 
 // Footer of the Landing Page
 const Footer = () => {
   return (
     <FooterContainer>
+       <FooterBox>
+      <FooterImg src={banner}></FooterImg>
+      <FooterZapper>Zapper</FooterZapper>
       <FooterCopyright>© Zapper 2021</FooterCopyright>
+      </FooterBox> 
       <FooterCompany>
+          <br /> Company
         <FooterDocs isLink>Docs</FooterDocs>
         <FooterCareers isLink>Careers</FooterCareers>
         <FooterLearn isLink>Learn</FooterLearn>
@@ -18,11 +24,13 @@ const Footer = () => {
         <FooterTerms isLink>Terms of Service</FooterTerms>
       </FooterCompany>
       <FooterSupport>
+      <br /> Support
         <FooterFaq isLink>FAQ</FooterFaq>
         <FooterContact isLink>Contact Support</FooterContact>
         <FooterPlatform isLink>Supported Platforms</FooterPlatform>
       </FooterSupport>
       <FooterSocial>
+          <br /> Social
         <FooterImg1 src={twitter}></FooterImg1>
         <FooterImg2 src={discord}></FooterImg2>
         <FooterImg3 src={message}></FooterImg3>
@@ -41,10 +49,44 @@ const FooterContainer = styled.div`
   padding: 72px 0;
   width: 100%;
   /* max-width: 1200px; */
+  /* padding-left: 616px; */
   box-sizing: border-box;
   margin: 0 auto;
   border-top: 1px solid #2d3237;
   -webkit-font-smoothing: antialiased;
+`;
+
+// Title Box /////////////////////////////////////////////////////////////////////////////////////////////////
+const FooterBox= styled.div`
+  display: flex;
+  flex: 1;
+  margin-right: 8px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-family: Avenir Next,Arial,sans-serif;
+`;
+
+// Zapper Icon
+const FooterImg = styled.img`
+	display: flex;
+	background: #141a1e;
+	color: #fff;
+	margin-inline-start: 10px;
+	width: 50px;
+`;
+
+// Zapper
+const FooterZapper = styled.div`
+	display: flex;
+	/* background: blueviolet; */
+	color: #fff;
+	font-size: 20px;
+    font-weight: 650;
+    margin-top: 2px;
+	margin-inline-start: 10px;
+	font-family: Avenir Next,Arial,sans-serif;
+	cursor: pointer;
 `;
 
 // Copyright
@@ -55,13 +97,16 @@ const FooterCopyright = styled.div`
   font-family: Avenir Next, Arial, sans-serif;
 `;
 
-// Company //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Company Box //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterCompany = styled.div`
-  display: block;
+  display: flex;
   flex-direction: column;
   align-items: stretch;
   margin-right: 8px;
   padding: 0 16px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-family: Avenir Next,Arial,sans-serif;
 `;
 
 // Docs
@@ -130,13 +175,16 @@ const FooterTerms = styled.div`
   cursor: pointer;
 `;
 
-// Support //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Support Box //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterSupport = styled.div`
   display: block;
   flex-direction: column;
   align-items: center;
   margin-right: 8px;
   padding: 0 16px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-family: Avenir Next,Arial,sans-serif;
 `;
 
 // FAQ
@@ -173,13 +221,16 @@ const FooterPlatform = styled.div`
   cursor: pointer;
 `;
 
-// Social //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Social Box //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterSocial = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 8px;
   padding: 0 45px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-family: Avenir Next,Arial,sans-serif;
 `;
 
 // Twitter Icon
