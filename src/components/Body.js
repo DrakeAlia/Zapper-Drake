@@ -21,6 +21,7 @@ const Body = () => {
 	);
 };
 
+
 // Body Container(Splash)
 const Splash = styled.div`
 	display: flex;
