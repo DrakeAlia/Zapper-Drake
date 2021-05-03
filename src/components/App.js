@@ -6,23 +6,27 @@ import Splash from "./Splash";
 import Docs from "./Docs";
 import Community from "./Community";
 import Tutorials from "./Tutorials";
-
+import Header from "./Header";
+import Footer from './Footer';
 
 const App = () => {
   return (
     <div>
       <Router>
+        <Header />
         <Switch>
-          <Route path="/">
-          <Route path="/docs" component={Docs} />
-		  <Route path="/discord" component={Community} />
-		  <Route path="/crunch" component={Tutorials} />
+          <Route exact path="/">
             <Box>
               <Splash />
             </Box>
           </Route>
+          <Route path="/docs" component={Docs} />
+          <Route path="/discord" component={Community} />
+          <Route path="/crunch" component={Tutorials} />
         </Switch>
+        <Footer />
       </Router>
+      
     </div>
   );
 };
@@ -35,4 +39,5 @@ const Box = styled.div`
   height: 100vh;
 `;
 
+// Token:
 // 0xa9782643b047de459d37a4951a1cd7ca46aa1932
