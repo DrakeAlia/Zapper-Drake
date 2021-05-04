@@ -11,6 +11,7 @@ const Body = () => {
 			<SplashItemSecond>Get unique access to opportunities in open finance.</SplashItemSecond>
 			<SplashContainer>
 				<SplashItemSearch>Enter ENS domain, a valid ETH, or BTC address</SplashItemSearch>
+				<button onClick></button>
 				<SplashItemGo>Let's Go!</SplashItemGo>
 				<br /><SplashOr>or</SplashOr>
 				<SplashItemConnect>Connect Wallet</SplashItemConnect>

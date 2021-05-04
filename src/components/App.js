@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import styled from "styled-components";
 import Splash from "./Splash";
@@ -7,7 +6,8 @@ import Docs from "./Docs";
 import Community from "./Community";
 import Tutorials from "./Tutorials";
 import Header from "./Header";
-import Footer from './Footer';
+import Footer from "./Footer";
+import DashBoard from "./DashBoard";
 
 const App = () => {
   return (
@@ -20,13 +20,13 @@ const App = () => {
               <Splash />
             </Box>
           </Route>
+          <Route path="/dashboard" component={DashBoard} />
           <Route path="/docs" component={Docs} />
           <Route path="/discord" component={Community} />
           <Route path="/crunch" component={Tutorials} />
         </Switch>
         <Footer />
       </Router>
-      
     </div>
   );
 };
