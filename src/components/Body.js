@@ -13,6 +13,7 @@ const Body = () => {
 				<SplashItemSearch>Enter ENS domain, a valid ETH, or BTC address</SplashItemSearch>
 				<button onClick></button>
 				<SplashItemGo>Let's Go!</SplashItemGo>
+				const 
 				<br /><SplashOr>or</SplashOr>
 				<SplashItemConnect>Connect Wallet</SplashItemConnect>
 			</SplashContainer>
