@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import SearchParams from './SearchParams';
 
 // Middle container for Landing Page
 const Body = () => {
@@ -10,10 +11,9 @@ const Body = () => {
 			</SplashItemFirst>
 			<SplashItemSecond>Get unique access to opportunities in open finance.</SplashItemSecond>
 			<SplashContainer>
+			{/* <SearchParams /> */}
 				<SplashItemSearch>Enter ENS domain, a valid ETH, or BTC address</SplashItemSearch>
-				<button onClick></button>
 				<SplashItemGo>Let's Go!</SplashItemGo>
-				const 
 				<br /><SplashOr>or</SplashOr>
 				<SplashItemConnect>Connect Wallet</SplashItemConnect>
 			</SplashContainer>
@@ -85,7 +85,7 @@ const SplashItemSecond = styled.div`
 	font-weight: 600;
 `;
 
-// Mid-Body Container
+// Mid-Body Container //////////////
 const SplashContainer = styled.div`
 	display: flex;
 	flex: 0 0 10%;
@@ -113,7 +113,7 @@ const SplashItemSearch = styled.div`
 	cursor: text;
 `;
 
-// Let's Go!
+// Let's Go! ////////////////////////////////////////
 const SplashItemGo = styled.div`
 	display: flex;
 	background: linear-gradient(135deg, #784ffe, #a160fe); 

@@ -44,14 +44,12 @@ const FooterContainer = styled.div`
   display: flex;
   background: #141a1e;
   flex: 1;
-  flex-direction: row;
-  align-items: center;
   padding: 72px 0;
   width: 100%;
   /* max-width: 1200px; */
   /* padding-left: 616px; */
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 590px auto;
   border-top: 1px solid #2d3237;
   -webkit-font-smoothing: antialiased;
 `;

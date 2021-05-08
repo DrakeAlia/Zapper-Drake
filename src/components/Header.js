@@ -15,12 +15,12 @@ const Header = () => {
       <Link to="/Docs">
         <HeaderItem>Docs</HeaderItem>
       </Link>
-	  <Link to="/Tutorials">
-      <HeaderItem>Tutorials</HeaderItem>
-	  </Link>
-	<Link to="/Community">
-      <HeaderItem>Community</HeaderItem>
-	  </Link>
+      <Link to="/Tutorials">
+        <HeaderItem>Tutorials</HeaderItem>
+      </Link>
+      <Link to="/Community">
+        <HeaderItem>Community</HeaderItem>
+      </Link>
     </HeaderBox>
   );
 };
@@ -45,10 +45,6 @@ const HeaderImg = styled.img`
   margin-inline-start: 10px;
   width: 50px;
 `;
-
-{
-  /* <path id="logo_exterior" d="M500 250C500 111.929 388.071 0 250 0C111.929 0 0 111.929 0 250C0 388.071 111.929 500 250 500C388.071 500 500 388.071 500 250Z" fill="#784FFE"></path> */
-}
 
 // Zapper
 const HeaderItemZapper = styled.div`
