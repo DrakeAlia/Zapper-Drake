@@ -22,6 +22,7 @@ const DashBoard = () => {
       {/* <DashBody> */}
       <DashNet>Net Worth</DashNet>
       <DashAmt>$1,688,512.22</DashAmt>
+      <DashCustom>Customize</DashCustom>
       <DashSubtitle>Assets: $1,751,735.84 Debt: $63,223.61</DashSubtitle>
       <DashSpace>Test</DashSpace>
       <DashAcc>Account Overview</DashAcc>
@@ -92,6 +93,20 @@ const DashAmt = styled.div`
   -webkit-font-smoothing: antialiased;
   border: 5px solid green;
 `;
+
+// Customize //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashCustom = styled.div`
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  width: 20%;
+  margin: 4px 0;
+  font-weight: 500;
+  font-family: Avenir Next, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border: 5px solid green;
+`;
+
 
 // Assets & Debt //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashSubtitle = styled.div`
