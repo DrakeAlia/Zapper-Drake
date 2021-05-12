@@ -52,6 +52,7 @@ const FooterContainer = styled.div`
   margin: 590px auto;
   border-top: 1px solid #2d3237;
   -webkit-font-smoothing: antialiased;
+  border-top: 1px solid #2d3237;
 `;
 
 // Title Box /////////////////////////////////////////////////////////////////////////////////////////////////
