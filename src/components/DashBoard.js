@@ -21,9 +21,12 @@ const DashBoard = () => {
     <Dash>
       <DashNet>Net Worth</DashNet>
       <DashAmt>$1,688,512.22</DashAmt>
+      <DashSettings>
       <DashCustom>Customize</DashCustom>
-      <DashSubtitle>Assets: $1,751,735.84 Debt: $63,223.61</DashSubtitle>
+      <DashNetwork>Network Settings</DashNetwork>
+      </DashSettings>
       <DashSpace>Space</DashSpace>
+      <DashSubtitle>Assets: $1,751,735.84 Debt: $63,223.61</DashSubtitle>
       <DashAcc>Account Overview</DashAcc>
       <DashAccWall>Wallet</DashAccWall>
       <DashAccDep>Deposits</DashAccDep>
@@ -34,7 +37,6 @@ const DashBoard = () => {
       <DashPlatCom>Compound</DashPlatCom>
       <DashPlatSyn>Sythetix</DashPlatSyn>
       <DashPlatCr>Cream</DashPlatCr>
-      <DashPlatSw>Swerve</DashPlatSw>
       <DashAssetAllo>Asset Allocation</DashAssetAllo>
       <DashAssetAlloWall>Wallet</DashAssetAlloWall>
       <DashAssetAlloDep>Deposits</DashAssetAlloDep>
@@ -43,7 +45,6 @@ const DashBoard = () => {
       <DashPlatformAlloCom>Compound</DashPlatformAlloCom>
       <DashPlatformAlloSyn>Synthetix</DashPlatformAlloSyn>
       <DashPlatformAlloCr>Cream</DashPlatformAlloCr>
-      <DashPlatformAlloSw>Swerve</DashPlatformAlloSw>
     </Dash>
   );
 };
@@ -61,15 +62,27 @@ const Dash = styled.div`
   border: 5px solid blue;
 `;
 
+// Dash Container ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashSettings = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: #141a1e;
+  color: #fff;
+  font-family: Avenir Next, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border: 5px solid blue;
+`;
+
 // Net Worth //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashNet = styled.div`
   display: flex;
   color: #9cabbb;
-  font-size: 16px;
   width: 6%;
   margin-top: 8px;
   margin-bottom: 2px;
   margin-left: 0px;
+  font-size: 16px;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid yellow;
@@ -78,9 +91,9 @@ const DashNet = styled.div`
 // Total Amount //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashAmt = styled.div`
   display: flex;
-  font-size: 30px;
   width: 15%;
   margin: 4px 0;
+  font-size: 30px;
   font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -99,8 +112,29 @@ const DashSpace = styled.div`
 const DashCustom = styled.div`
   display: flex;
   color: #fff;
-  font-size: 14px;
   width: 5%;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Avenir Next, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  border: 5px solid green;
+  /* display: flex;
+    align-items: center;
+    padding: 0 12px;
+    height: 50px;
+    transition: .3s;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer; */
+`;
+
+// Network Settings //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashNetwork = styled.div`
+  display: flex;
+  color: #fff;
+  width: 15%;
+  font-size: 14px;
   font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -112,8 +146,8 @@ const DashCustom = styled.div`
 const DashSubtitle = styled.div`
   display: flex;
   color: #9cabbb;
-  font-size: 14px;
   width: 20%;
+  font-size: 14px;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid teal;
@@ -126,6 +160,8 @@ const DashAcc = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid green;
@@ -137,7 +173,10 @@ const DashAccWall = styled.div`
   color: #fff;
   padding: 32px 0;
   width: 100%;
+  /* flex: 0 0 20%; */
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid green;
@@ -146,10 +185,15 @@ const DashAccWall = styled.div`
 // Account Deposits ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashAccDep = styled.div`
   display: flex;
+  flex-flow: row wrap;
   color: #fff;
   padding: 32px 0;
-  width: 100%;
+  /* width: 100%; */
+  flex: 0 0 20%;
   margin: 0 auto;
+  /* margin-right: 32px; */
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid green;
@@ -162,6 +206,8 @@ const DashAccNTF = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid green;
@@ -174,6 +220,8 @@ const DashAccFar = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid green;
@@ -186,6 +234,8 @@ const DashAccDebt = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid green;
@@ -198,6 +248,8 @@ const DashPlat = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid pink;
@@ -210,6 +262,8 @@ const DashPlatCom = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid pink;
@@ -222,6 +276,8 @@ const DashPlatSyn = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid pink;
@@ -234,22 +290,13 @@ const DashPlatCr = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid pink;
 `;
 
-// Platforms Swerve ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const DashPlatSw = styled.div`
-  display: flex;
-  color: #fff;
-  padding: 32px 0;
-  width: 100%;
-  margin: 0 auto;
-  font-family: Avenir Next, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  border: 5px solid pink;
-`;
 
 // Asset Allocation ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashAssetAllo = styled.div`
@@ -258,6 +305,8 @@ const DashAssetAllo = styled.div`
   padding: 32px 0;
   width: 100%;
   margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid purple;
@@ -307,9 +356,11 @@ const DashPlatformAllo = styled.div`
   width: 100%;
   margin: 0 auto;
   border: 5px solid blue;
+  font-size: 20px;
+  font-weight: 400;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  border: 5px solid purple;
+  border: 5px solid red;
 `;
 
 // Platform Allocation Compound //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -321,7 +372,7 @@ const DashPlatformAlloCom = styled.div`
   margin: 0 auto;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  border: 5px solid purple;
+  border: 5px solid red;
 `;
 
 // Platform Allocation Synthetix //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -333,7 +384,7 @@ const DashPlatformAlloSyn = styled.div`
   margin: 0 auto;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  border: 5px solid purple;
+  border: 5px solid red;
 `;
 
 // Platform Allocation Cream //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -345,20 +396,9 @@ const DashPlatformAlloCr = styled.div`
   margin: 0 auto;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  border: 5px solid purple;
+  border: 5px solid red;
 `;
 
-// Platform Allocation Swerve //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const DashPlatformAlloSw = styled.div`
-  display: flex;
-  color: #fff;
-  padding: 32px 0;
-  width: 100%;
-  margin: 0 auto;
-  font-family: Avenir Next, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  border: 5px solid purple;
-`;
 
 export default DashBoard;
 

@@ -36,7 +36,7 @@ const Splash = styled.div`
   background: #141a1e;
   color: #fff;
   /* padding: 0 16px; */
-  padding: 140px;
+  padding: 40px;
   width: 100%;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
