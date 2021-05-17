@@ -196,10 +196,10 @@ const DashGridHeader = styled.div`
 // Grid Container ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashGrid = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   background: #141a1e;
   color: #fff;
-  padding: 32px 0;
   margin-bottom: 32px;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -212,11 +212,15 @@ const DashGridItem = styled.div`
   flex-direction: column;
   background: #141a1e;
   color: #fff;
-  padding: 32px 0;
-  margin-bottom: 32px;
+  padding: 16px;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin: 40px;
+  border-radius: 4px;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  border: 5px solid teal;
+  cursor: pointer;
+  border: 1px solid #2d3237;
 `;
 
 // Platforms Header ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -225,8 +229,7 @@ const DashPlatforms = styled.div`
   flex-direction: column;
   background: #141a1e;
   color: #fff;
-  margin-top: 0;
-    margin-bottom: 16px;
+  height: 60px;
   font-size: 20px;
   font-weight: 400;
   font-family: Avenir Next, Arial, sans-serif;
