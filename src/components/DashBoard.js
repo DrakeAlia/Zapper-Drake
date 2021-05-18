@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import compound from "../media/download5.png";
+import synthetix from "../media/download6.png";
+import cream from "../media/download7.png";
 
 // const DashBoard = () => {
 //     return (
@@ -55,25 +58,56 @@ const DashBoard = () => {
         <DashNet>Net Worth</DashNet>
         <DashAmt>$1,688,512.22</DashAmt>
         <DashSubtitle>Assets: $1,751,735.84 Debt: $63,223.61</DashSubtitle>
-      <DashControls>
-        <DashControlItem>Customize</DashControlItem>
-        <DashControlItem>Network Settings</DashControlItem>
-      </DashControls>
+        <DashControls>
+          <DashControlItem>Customize</DashControlItem>
+          <DashControlItem>Network Settings</DashControlItem>
+        </DashControls>
       </DashTotal>
       <DashGridHeader>Account Overview</DashGridHeader>
-      <DashGrid>
-        <DashGridItem>Wallet</DashGridItem>
-        <DashGridItem>Deposits</DashGridItem>
-        <DashGridItem>NFTs</DashGridItem>
-        <DashGridItem>Yield Farming</DashGridItem>
-        <DashGridItem>Debt</DashGridItem>
-      </DashGrid>
+      <DashGridContainer>
+        <DashGridBox>
+          {/* <GridImg src={}></GridImg> */}
+          <DashGridItem>Wallet</DashGridItem>
+          <DashMoney>$963,441.92</DashMoney>
+        </DashGridBox>
+        <DashGridBox>
+          {/* <GridImg src={}></GridImg> */}
+          <DashGridItem>Deposits</DashGridItem>
+          <DashMoney>$711,368.91</DashMoney>
+        </DashGridBox>
+        <DashGridBox>
+          {/* <GridImg src={}></GridImg> */}
+          <DashGridItem>NFTs</DashGridItem>
+        </DashGridBox>
+        <DashGridBox>
+          {/* <GridImg src={}></GridImg> */}
+          <DashGridItem>Yield Farming</DashGridItem>
+          <DashMoney>$566.11</DashMoney>
+        </DashGridBox>
+        <DashGridBox>
+          {/* <GridImg src={}></GridImg> */}
+          <DashGridItem>Debt</DashGridItem>
+          <DashMoney>$63,543.62</DashMoney>
+        </DashGridBox>
+      </DashGridContainer>
       <DashPlatforms>Platforms</DashPlatforms>
-      <DashGrid>
-      <DashGridItem>Compound</DashGridItem>
-      <DashGridItem>Synthetix</DashGridItem>
-      <DashGridItem>Cream</DashGridItem>
-      </DashGrid>
+      <DashGridContainer>
+        <DashGridBox>
+          <GridImg src={compound}></GridImg>
+          <DashGridItem>Compound</DashGridItem>
+          <DashMoney>$63,543.62</DashMoney>
+        </DashGridBox>
+        <DashGridBox>
+          <GridImg src={synthetix}></GridImg>
+          <DashGridItem>Synthetix</DashGridItem>
+          <DashMoney>$20,872.65</DashMoney>
+        </DashGridBox>
+        <DashGridBox>
+          <GridImg src={cream}></GridImg>
+          <DashGridItem>Cream</DashGridItem>
+          <DashMoney>$20,872.65</DashMoney>
+        </DashGridBox>
+      </DashGridContainer>
     </Dash>
   );
 };
@@ -104,7 +138,6 @@ const DashTotal = styled.div`
   -webkit-font-smoothing: antialiased;
   border: 5px solid blue;
 `;
-
 
 // Net Worth //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashNet = styled.div`
@@ -142,14 +175,6 @@ const DashSubtitle = styled.div`
   -webkit-font-smoothing: antialiased;
   border: 5px solid teal;
 `;
-
-// // BigSpace in between ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashSpace = styled.div`
-//   display: flex;
-//   margin-left: 20%;
-//   margin-right: 40%;
-//   border: 5px solid purple;
-// `;
 
 // Controls Container ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashControls = styled.div`
@@ -194,7 +219,7 @@ const DashGridHeader = styled.div`
 `;
 
 // Grid Container ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const DashGrid = styled.div`
+const DashGridContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -206,16 +231,53 @@ const DashGrid = styled.div`
   border: 5px solid teal;
 `;
 
-// Grid Items ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const DashGridItem = styled.div`
+// Grid Box with items ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashGridBox = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: #141a1e;
   color: #fff;
   padding: 16px;
-  padding-left: 90px;
-  padding-right: 90px;
   margin: 40px;
+  border-radius: 4px;
+  font-family: Avenir Next, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  border: 1px solid #2d3237;
+`;
+
+// Grid Icon ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const GridImg = styled.img`
+  display: flex;
+  width: 70px;
+`;
+
+// Grid Items ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashGridItem = styled.div`
+  display: flex;
+  align-items: baseline;
+  background: #141a1e;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  font-family: Avenir Next, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  border: 1px solid #2d3237;
+`;
+
+// Grid Item Money ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashMoney = styled.div`
+  display: flex;
+  background: #141a1e;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding: 16px;
   border-radius: 4px;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -236,7 +298,6 @@ const DashPlatforms = styled.div`
   -webkit-font-smoothing: antialiased;
   border: 5px solid limegreen;
 `;
-
 
 // Account Overview ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // const DashAcc = styled.div`
