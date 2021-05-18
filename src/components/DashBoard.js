@@ -179,13 +179,12 @@ const DashSubtitle = styled.div`
 // Controls Container ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashControls = styled.div`
   display: flex;
-  flex-direction: row;
-  align-self: flex-end;
+  justify-content: flex-end;
   background: #141a1e;
   color: #fff;
   padding: 22px 0;
-  padding-left: 40%;
   padding-right: 10%;
+  margin-left: 30%;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 5px solid yellow;
@@ -223,8 +222,10 @@ const DashGridContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* justify-content: center; */
   background: #141a1e;
   color: #fff;
+  width: 100%;
   margin-bottom: 32px;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -237,6 +238,7 @@ const DashGridBox = styled.div`
   flex-direction: row;
   background: #141a1e;
   color: #fff;
+  /* width: 20%; */
   padding: 16px;
   margin: 40px;
   border-radius: 4px;
