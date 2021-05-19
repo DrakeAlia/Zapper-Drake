@@ -31,11 +31,9 @@ const FeatureList = styled.div`
   display: flex;
   background: #141a1e;
   flex-direction: row;
-  /* flex: 1; */
   justify-content: space-around;
-  /* align-items: center; */
+  padding: 170px 0;
   -webkit-font-smoothing: antialiased;
-  padding: 120px 0;
 `;
 
 // Container 1 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

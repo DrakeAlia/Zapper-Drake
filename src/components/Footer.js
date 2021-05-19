@@ -42,18 +42,21 @@ const Footer = () => {
 // Footer Container //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterContainer = styled.div`
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background: #141a1e;
   margin: 20% auto;
-  border-top: 1px solid #2d3237;
   -webkit-font-smoothing: antialiased;
-  border-top: 1px solid #2d3237;
+  border: 1px solid #2d3237;
 `;
 
-// Title Box ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Zapper Box ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterBox = styled.div`
   display: flex;
   align-items: center;
   color: #fff;
+  margin-left: 50px;
+  -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
 `;
 
@@ -63,7 +66,6 @@ const FooterImg = styled.img`
   background: #141a1e;
   align-items: center;
   color: #fff;
-  margin-inline-start: 10px;
   width: 50px;
 `;
 
@@ -75,18 +77,18 @@ const FooterZapper = styled.div`
   font-size: 20px;
   font-weight: 600;
   margin-top: 2px;
+  -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
   cursor: pointer;
 `;
 
-// Copyright //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Zapper Copyright //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterCopyright = styled.div`
   display: flex;
   color: #9cabbb;
   margin-top: 32px;
-  text-align: left;
-  flex: 1 1;
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
 `;
 
@@ -94,11 +96,10 @@ const FooterCopyright = styled.div`
 const FooterCompany = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  color: #fff;
   margin-right: 8px;
   padding: 0 16px;
   margin-bottom: 16px;
-  color: #fff;
   font-family: Avenir Next, Arial, sans-serif;
 `;
 
