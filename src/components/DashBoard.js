@@ -57,7 +57,10 @@ const DashBoard = () => {
       <DashTotal>
         <DashNet>Net Worth</DashNet>
         <DashAmt>$1,688,512.22</DashAmt>
-        <DashSubtitle>Assets: $1,751,735.84 Debt: $63,223.61</DashSubtitle>
+        <DashSubtitle>
+          <DashSubtitleItem>Assets: $1,751,735.84</DashSubtitleItem>
+          <DashSubtitleItem>Debt: $63,223.61</DashSubtitleItem>
+          </DashSubtitle>
         <DashControls>
           <DashControlItem>Customize</DashControlItem>
           <DashControlItem>Network Settings</DashControlItem>
@@ -165,12 +168,24 @@ const DashAmt = styled.div`
   border: 1px solid #2d3237;
 `;
 
-// Assets & Debt //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Subtitle Box //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashSubtitle = styled.div`
   display: flex;
+  flex-direction: row;
+justify-content: space-between;
   color: #9cabbb;
-  width: 20%;
   font-size: 14px;
+  margin-right: 80%;
+  width: auto;
+  font-family: Avenir Next, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid #2d3237;
+`;
+
+// Subtitle Item //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashSubtitleItem = styled.div`
+  display: flex;
+  color: #9cabbb;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   border: 1px solid #2d3237;
@@ -179,6 +194,7 @@ const DashSubtitle = styled.div`
 // Controls Container ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashControls = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   background: #141a1e;
   color: #fff;

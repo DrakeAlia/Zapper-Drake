@@ -5,7 +5,7 @@ import discord from "../media/download.png";
 import weChat from "../media/download3.png";
 import banner from "../media/download4.png";
 
-// Footer of the Landing Page
+// Footer of the Landing Page //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const Footer = () => {
   return (
     <FooterContainer>
@@ -15,7 +15,7 @@ const Footer = () => {
         <FooterCopyright>© Zapper 2021</FooterCopyright>
       </FooterZapperBox>
       <FooterCompany>
-      <FooterCompanyHeader>Company</FooterCompanyHeader>
+      <FooterTitle>Company</FooterTitle>
         <FooterItem isLink>Docs</FooterItem>
         <FooterItem isLink>Careers</FooterItem>
         <FooterItem isLink>Learn</FooterItem>
@@ -24,13 +24,13 @@ const Footer = () => {
         <FooterItem isLink>Terms of Service</FooterItem>
       </FooterCompany>
       <FooterSupport>
-      <FooterSupportHeader>Support</FooterSupportHeader>
+      <FooterTitle>Support</FooterTitle>
         <FooterItem isLink>FAQ</FooterItem>
         <FooterItem isLink>Contact Support</FooterItem>
         <FooterItem isLink>Supported Platforms</FooterItem>
       </FooterSupport>
       <FooterSocial>
-      <FooterSocialHeader>Social</FooterSocialHeader>
+      <FooterTitle>Social</FooterTitle>
         <FooterIcon src={twitter}></FooterIcon>
         <FooterIcon src={discord}></FooterIcon>
         <FooterIcon src={weChat}></FooterIcon>
@@ -38,6 +38,7 @@ const Footer = () => {
     </FooterContainer>
   );
 };
+
 
 // Footer Container //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterContainer = styled.div`
@@ -93,13 +94,27 @@ const FooterCopyright = styled.div`
 
 
 // Footer Items //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const FooterItem= styled.div`
+const FooterItem = styled.div`
   display: flex;
   flex-direction: column;
   color: #fff;
+  font-size: 14px;
   margin-right: 8px;
   padding: 0 16px;
+  margin-bottom: 6px;
+  -webkit-font-smoothing: antialiased;
+  font-family: Avenir Next, Arial, sans-serif;
+`;
+
+
+// Footer Titles //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const FooterTitle = styled.div`
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 16px;
+  padding-left: 10%;
   -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
 `;
@@ -110,20 +125,7 @@ const FooterCompany = styled.div`
   display: flex;
   flex-direction: column;
   color: #fff;
-  margin-right: 8px;
-  padding: 0 16px;
-  margin-bottom: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-family: Avenir Next, Arial, sans-serif;
-`;
-
-
-// Company Header //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const FooterCompanyHeader = styled.div`
-  display: flex;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
   margin-right: 8px;
   padding: 0 16px;
   margin-bottom: 16px;
@@ -134,21 +136,8 @@ const FooterCompanyHeader = styled.div`
 
 // Support Box //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterSupport = styled.div`
-  display: block;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  font-family: Avenir Next, Arial, sans-serif;
-`;
-
-
-// Support Header //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const FooterSupportHeader = styled.div`
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  margin-right: 8px;
-  padding: 0 16px;
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
@@ -160,24 +149,10 @@ const FooterSocial = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff;
   margin-right: 8px;
   padding: 0 45px;
   margin-bottom: 16px;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  font-family: Avenir Next, Arial, sans-serif;
-`;
-
-
-// Social Header //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const FooterSocialHeader = styled.div`
-  display: flex;
-  font-size: 16px;
-  font-weight: 600;
-  margin-right: 8px;
-  padding: 0 45px;
-  margin-bottom: 16px;
-  color: #fff;
   -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
 `;
