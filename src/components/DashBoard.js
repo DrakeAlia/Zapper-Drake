@@ -5,14 +5,7 @@ import compound from "../media/download5.png";
 import synthetix from "../media/download6.png";
 import cream from "../media/download7.png";
 
-// const DashBoard = () => {
-//     return (
-//         <div>
-//             <h1>Dashboard</h1>
-//         </div>
-//     );
-// };
-
+// The Dashboard after logining in  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DashBoard = () => {
   const [dash, setDash] = useState("");
 
@@ -20,37 +13,7 @@ const DashBoard = () => {
     console.log(DashBoard);
   }, [DashBoard]);
 
-  //   return (
-  //     <Dash>
-  //       <DashNet>Net Worth</DashNet>
-  //       <DashAmt>$1,688,512.22</DashAmt>
-  //       <DashSettings>
-  //       <DashCustom>Customize</DashCustom>
-  //       <DashNetwork>Network Settings</DashNetwork>
-  //       </DashSettings>
-  //       <DashSpace>Space</DashSpace>
-  //       <DashSubtitle>Assets: $1,751,735.84 Debt: $63,223.61</DashSubtitle>
-  //       <DashAcc>Account Overview</DashAcc>
-  //       <DashAccWall>Wallet</DashAccWall>
-  //       <DashAccDep>Deposits</DashAccDep>
-  //       <DashAccNTF>NFTs</DashAccNTF>
-  //       <DashAccFar>Yield Farming</DashAccFar>
-  //       <DashAccDebt>Debt</DashAccDebt>
-  //       <DashPlat>Platforms</DashPlat>
-  //       <DashPlatCom>Compound</DashPlatCom>
-  //       <DashPlatSyn>Sythetix</DashPlatSyn>
-  //       <DashPlatCr>Cream</DashPlatCr>
-  //       <DashAssetAllo>Asset Allocation</DashAssetAllo>
-  //       <DashAssetAlloWall>Wallet</DashAssetAlloWall>
-  //       <DashAssetAlloDep>Deposits</DashAssetAlloDep>
-  //       <DashAssetAlloFar>Yield Farming</DashAssetAlloFar>
-  //       <DashPlatformAllo>Platform Allocation</DashPlatformAllo>
-  //       <DashPlatformAlloCom>Compound</DashPlatformAlloCom>
-  //       <DashPlatformAlloSyn>Synthetix</DashPlatformAlloSyn>
-  //       <DashPlatformAlloCr>Cream</DashPlatformAlloCr>
-  //     </Dash>
-  //   );
-  // };
+
 
   return (
     <Dash>

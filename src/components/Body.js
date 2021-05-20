@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // import SearchParams from './SearchParams';
 
-// Middle container for Landing Page
+// Middle container for Landing Page //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const Body = () => {
   return (
     <Splash>

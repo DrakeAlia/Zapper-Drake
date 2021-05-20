@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-// Bottom Portion of the Landing Page
+// Bottom Portion of the Landing Page //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const Bottom = () => {
   return (
     <FeatureList>
