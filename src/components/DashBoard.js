@@ -201,7 +201,7 @@ const DashGridContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* justify-content: center; */
+  flex-wrap: wrap;
   background: #141a1e;
   color: #fff;
   width: 100%;
