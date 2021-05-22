@@ -30,13 +30,15 @@ const Bottom = () => {
 const FeatureList = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: #141a1e;
-  padding: 170px 0;
+  padding: 40px 0;
+  margin: 0%;
+  font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 `;
 
-// Container 1 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Container  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FeatureListBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -68,8 +70,6 @@ const FeatureListItemTitle = styled.div`
   color: #fff;
   font-size: 20px;
   font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: Avenir Next, Arial, sans-serif;
 `;
 
@@ -81,11 +81,10 @@ const FeatureListItem = styled.div`
   color: #9cabbb;
   font-size: 16px;
   padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 0;
   text-decoration: ${(props) => (props.isLink ? "underline" : "none")};
   font-family: Avenir Next, Arial, sans-serif;
   cursor: pointer;
 `;
+
 
 export default Bottom;
