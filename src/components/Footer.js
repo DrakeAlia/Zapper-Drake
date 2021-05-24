@@ -33,9 +33,18 @@ const Footer = () => {
       </FooterSupport>
       <FooterSocial>
         <FooterTitle>Social</FooterTitle>
-        <FooterIcon src={twitter}></FooterIcon>
-        <FooterIcon src={discord}></FooterIcon>
-        <FooterIcon src={weChat}></FooterIcon>
+        <FooterIconText>
+          <FooterIcon src={twitter}></FooterIcon>
+          Twitter
+        </FooterIconText>
+        <FooterIconText>
+          <FooterIcon src={discord}></FooterIcon>
+          Discord
+        </FooterIconText>
+        <FooterIconText>
+          <FooterIcon src={weChat}></FooterIcon>
+          Wechat
+        </FooterIconText>
       </FooterSocial>
     </FooterContainer>
   );
@@ -49,7 +58,7 @@ const FooterContainer = styled.div`
   background: #141a1e;
   padding: 72px 0;
   -webkit-font-smoothing: antialiased;
-  font-family: Avenir Next,Arial,sans-serif;
+  font-family: Avenir Next, Arial, sans-serif;
   border: 1px solid #2d3237;
 `;
 
@@ -58,7 +67,7 @@ const FooterZapperBox = styled.div`
   display: flex;
   flex-direction: column;
   color: #fff;
-  width: 10% ;
+  width: 10%;
   -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
   border: 1px solid #2d3237;
@@ -96,6 +105,7 @@ const FooterCopyright = styled.div`
   display: flex;
   color: #9cabbb;
   margin-top: 40%;
+  padding-left: 2%;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   font-family: Avenir Next, Arial, sans-serif;
@@ -162,6 +172,14 @@ const FooterSocial = styled.div`
   font-family: Avenir Next, Arial, sans-serif;
 `;
 
+// Icon Text //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const FooterIconText = styled.div`
+  display: flex;
+  margin-bottom: 20%;
+  width: 25px;
+  cursor: pointer;
+`;
+
 // Image Icons //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const FooterIcon = styled.img`
   display: flex;
@@ -169,6 +187,5 @@ const FooterIcon = styled.img`
   width: 25px;
   cursor: pointer;
 `;
-
 
 export default Footer;

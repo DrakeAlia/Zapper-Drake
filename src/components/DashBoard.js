@@ -13,8 +13,6 @@ const DashBoard = () => {
     console.log(DashBoard);
   }, [DashBoard]);
 
-
-
   return (
     <Dash>
       <DashTotal>
@@ -23,7 +21,7 @@ const DashBoard = () => {
         <DashSubtitle>
           <DashSubtitleItem>Assets: $1,751,735.84</DashSubtitleItem>
           <DashSubtitleItem>Debt: $63,223.61</DashSubtitleItem>
-          </DashSubtitle>
+        </DashSubtitle>
         <DashControls>
           <DashControlItem>Customize</DashControlItem>
           <DashControlItem>Network Settings</DashControlItem>
@@ -59,17 +57,23 @@ const DashBoard = () => {
       <DashPlatforms>Platforms</DashPlatforms>
       <DashGridContainer>
         <DashGridBox>
-          <GridImg src={compound}></GridImg>
+          <DashGridImgBox>
+            <GridImg src={compound}></GridImg>
+          </DashGridImgBox>
           <DashGridItem>Compound</DashGridItem>
           <DashMoney>$63,543.62</DashMoney>
         </DashGridBox>
         <DashGridBox>
-          <GridImg src={synthetix}></GridImg>
+          <DashGridImgBox>
+            <GridImg src={synthetix}></GridImg>
+          </DashGridImgBox>
           <DashGridItem>Synthetix</DashGridItem>
           <DashMoney>$20,872.65</DashMoney>
         </DashGridBox>
         <DashGridBox>
-          <GridImg src={cream}></GridImg>
+          <DashGridImgBox>
+            <GridImg src={cream}></GridImg>
+          </DashGridImgBox>
           <DashGridItem>Cream</DashGridItem>
           <DashMoney>$20,872.65</DashMoney>
         </DashGridBox>
@@ -135,7 +139,7 @@ const DashAmt = styled.div`
 const DashSubtitle = styled.div`
   display: flex;
   flex-direction: row;
-justify-content: space-between;
+  justify-content: space-between;
   color: #9cabbb;
   font-size: 14px;
   margin-right: 80%;
@@ -217,10 +221,25 @@ const DashGridBox = styled.div`
   flex-direction: row;
   background: #141a1e;
   color: #fff;
-  /* width: 20%; */
   padding: 16px;
   margin: 40px;
+  padding-top: 30px;
   border-radius: 4px;
+  font-family: Avenir Next, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  border: 1px solid #2d3237;
+`;
+
+// Grid Box with images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const DashGridImgBox = styled.div`
+  display: flex;
+  background: #141a1e;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  margin-top: 5px;
   font-family: Avenir Next, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
@@ -230,7 +249,7 @@ const DashGridBox = styled.div`
 // Grid Icon ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const GridImg = styled.img`
   display: flex;
-  width: 70px;
+  width: 100%;
 `;
 
 // Grid Items ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -242,6 +261,7 @@ const DashGridItem = styled.div`
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 16px;
+  margin-right: 130px;
   padding: 16px;
   border-radius: 4px;
   font-family: Avenir Next, Arial, sans-serif;
@@ -280,249 +300,5 @@ const DashPlatforms = styled.div`
   border: 1px solid #2d3237;
 `;
 
-// Account Overview ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAcc = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 20px;
-//   font-weight: 400;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid green;
-// `;
-
-// // Account Wallet ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAccWall = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   /* flex: 0 0 20%; */
-//   margin: 0 auto;
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid green;
-// `;
-
-// // Account Deposits ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAccDep = styled.div`
-//   display: flex;
-//   flex-flow: row wrap;
-//   color: #fff;
-//   padding: 32px 0;
-//   /* width: 100%; */
-//   flex: 0 0 20%;
-//   margin: 0 auto;
-//   /* margin-right: 32px; */
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid green;
-// `;
-
-// // Account NTFs ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAccNTF = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid green;
-// `;
-
-// // Account Yield Farming ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAccFar = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid green;
-// `;
-
-// // Account Debt ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAccDebt = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid green;
-// `;
-
-// // Platforms ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlat = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 20px;
-//   font-weight: 400;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid pink;
-// `;
-
-// // Platforms Compound ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlatCom = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid pink;
-// `;
-
-// // Platforms Synthetix ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlatSyn = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid pink;
-// `;
-
-// // Platforms Cream ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlatCr = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 16px;
-//   font-weight: 500;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid pink;
-// `;
-
-// // Asset Allocation ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAssetAllo = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 20px;
-//   font-weight: 400;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid purple;
-// `;
-
-// // Asset Allocation Wallet ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAssetAlloWall = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid purple;
-// `;
-
-// // Asset Allocation Deposits ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAssetAlloDep = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid purple;
-// `;
-
-// // Asset Allocation Yield Farming ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashAssetAlloFar = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid purple;
-// `;
-
-// // Platform Allocation //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlatformAllo = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   border: 5px solid blue;
-//   font-size: 20px;
-//   font-weight: 400;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid red;
-// `;
-
-// // Platform Allocation Compound //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlatformAlloCom = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid red;
-// `;
-
-// // Platform Allocation Synthetix //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlatformAlloSyn = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid red;
-// `;
-
-// // Platform Allocation Cream //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const DashPlatformAlloCr = styled.div`
-//   display: flex;
-//   color: #fff;
-//   padding: 32px 0;
-//   width: 100%;
-//   margin: 0 auto;
-//   font-family: Avenir Next, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   border: 5px solid red;
-// `;
 
 export default DashBoard;
