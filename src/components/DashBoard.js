@@ -10,8 +10,18 @@ const DashBoard = () => {
   const [dash, setDash] = useState("");
 
   useEffect(() => {
+    requestDash();
     console.log(DashBoard);
-  }, [DashBoard]);
+  }, []);
+
+  async function requestDash() {
+    const res = await fetch(
+      `https://api.zapper.fi/api/json`
+    );
+    const json = await res.json();
+
+    setDash(json.dash);
+  }
 
   return (
     <Dash>
